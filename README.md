@@ -75,7 +75,7 @@ Run with:
 ./loganalyzer -f /var/log/auth.log -e
 
 ## Enable multithreaded search:
-./loganalyzer -f /var/log/auth.log -t
+./loganalyzer -f /var/log/auth.log -t <4>
 
 ## Memory Map statistics
 ./loganalyzer -f /var/log/auth.log -m
