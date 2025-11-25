@@ -45,6 +45,17 @@ Run with:
 
 ---
 
+## Run this code in your terminal under logalayzer (Username/logalayzer) to generate a 100 MB mixed log (INFO/WARNING/ERROR):
+
+(for i in $(seq 1 300000); do
+    LEVEL=$(shuf -n 1 -e INFO WARNING ERROR DEBUG CRITICAL)
+    echo "$LEVEL: entry number $i at $(date)"
+done) > biglog.txt
+
+Examaple: Then you run start using the loganalyzer like: ./loganalyzer -f biglog.txt -h
+
+---
+
 ## Command-Line Options
 
 | Option | Long Form | Description |
